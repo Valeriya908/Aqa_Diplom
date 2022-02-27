@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'io.freefair.lombok' version '5.3.0'
+    id 'io.qameta.allure' version '2.9.6'
+}
+
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+allure {
+    version = '2.16.1'
+    useJUnit5 {
+        version = '2.16.1'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'mysql:mysql-connector-java:8.0.22'
+    testImplementation 'org.postgresql:postgresql:42.2.18'
+    testImplementation 'com.codeborne:selenide:5.19.0'
+    testImplementation 'commons-dbutils:commons-dbutils:1.7'
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    testImplementation 'io.qameta.allure:allure-selenide:2.16.1'
+    testImplementation 'org.apache.commons:commons-lang3:3.11'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
+    systemProperty "dbUrl", System.getProperty("dbUrl")
+    systemProperty "dbUser", System.getProperty("dbUser", "user")
+    systemProperty "dbPass", System.getProperty("dbPass", "pass")
+}
