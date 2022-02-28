@@ -39,7 +39,7 @@ ___
 2. *В терминале IntelliJ IDEA Ultimate с помощью команды `docker-compose up` разворачиваем контейнер, необходимый для дальнейшей работы (настройки для запуска контейнера прописаны в файле `docker-compose.yml`).*
 
 3. *Запуск SUT с поддержкой БД:*
-- *MySQL: в новом окне терминала запустить SUT командой `java -jar aqa-shop.jar --spring.profiles.active=mysql`*
+- *MySQL: в новом окне терминала запустить SUT командой `java -jar artifacts/aqa-shop.jar --spring.profiles.active=mysql`*
 - *PostgreSQL: в новом окне терминала запустить SUT командой `java -jar artifacts/aqa-shop.jar --spring.profiles.active=postgresql`*
 
 :exclamation: *В браузере сервис будет доступен по адресу http://localhost:8080/*
