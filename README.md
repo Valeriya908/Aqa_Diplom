@@ -6,8 +6,7 @@ ___
 - ***[План автоматизации](https://github.com/Valeriya908/Aqa_Diplom/blob/master/Plan.md)***
 - ***[Отчет о тестировании](https://github.com/Valeriya908/Aqa_Diplom/blob/master/Report.md)***
 - ***[Отчёт о проведённой автоматизации](https://github.com/Valeriya908/Aqa_Diplom/blob/master/Summary.md)***
-
-
+___
 ## _Краткое описание тестируемого приложения:_
 ### _Бизнес часть:_
 
