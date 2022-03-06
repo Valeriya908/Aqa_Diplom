@@ -70,7 +70,7 @@ public class PaymentDebitCardTest {
         debitPaymentPage.errorMessageForm();
     }
 
-    // Negative Test 1 (1* - для воспроизведения бага)
+    // Negative Test 1
 
     //    Test 1
     @SneakyThrows
@@ -85,19 +85,6 @@ public class PaymentDebitCardTest {
         debitPaymentPage.errorMessageForm();
         assertNull(DatabaseHelper.getTransactionStatusDebitCard());
         assertNull(DatabaseHelper.getTransactionTypeDebitCard());
-    }
-
-    //    Test 1*
-    @SneakyThrows
-    @Test
-    void shouldVisibleExtraMessageWhenUsualBuyWithAnotherCard() {
-        var cardNumber = DataHelper.getAnotherCardNumber();
-        var month = DataHelper.getMonth(3);
-        var year = DataHelper.getYear(1);
-        var owner = DataHelper.getOwner("en");
-        var code = DataHelper.getValidCode();
-        debitPaymentPage.fillOutAllFields(cardNumber, month, year, owner, code);
-        debitPaymentPage.errorMessageForm();
         debitPaymentPage.closeErrorSendFormMessage();
     }
 

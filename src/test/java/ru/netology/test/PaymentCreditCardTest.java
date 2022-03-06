@@ -69,7 +69,7 @@ public class PaymentCreditCardTest {
         assertNotNull(DatabaseHelper.getTransactionTypeCreditCard());
     }
 
-    // Negative Test 1 (1* - для воспроизведения бага)
+    // Negative Test 1
 
     //    Test 1
     @SneakyThrows
@@ -84,19 +84,6 @@ public class PaymentCreditCardTest {
         creditPaymentPage.errorMessageForm();
         assertNull(DatabaseHelper.getTransactionStatusCreditCard());
         assertNull(DatabaseHelper.getTransactionTypeCreditCard());
-    }
-
-    //    Test 1*
-    @SneakyThrows
-    @Test
-    void shouldVisibleExtraMessageWhenCreditBuyWithAnotherCard() {
-        var cardNumber = DataHelper.getAnotherCardNumber();
-        var month = DataHelper.getMonth(3);
-        var year = DataHelper.getYear(1);
-        var owner = DataHelper.getOwner("en");
-        var code = DataHelper.getValidCode();
-        creditPaymentPage.fillOutAllFields(cardNumber, month, year, owner, code);
-        creditPaymentPage.errorMessageForm();
         creditPaymentPage.closeErrorSendFormMessage();
     }
 

@@ -3,9 +3,9 @@
 ___
 ## _Документация:_
 
-- ***[План автоматизации](https://github.com/Valeriya908/Aqa_Diplom/blob/master/Plan.md)***
-- ***[Отчет о тестировании](https://github.com/Valeriya908/Aqa_Diplom/blob/master/Report.md)***
-- ***[Отчёт о проведённой автоматизации](https://github.com/Valeriya908/Aqa_Diplom/blob/master/Summary.md)***
+- ***[План автоматизации](https://github.com/Valeriya908/Aqa_Diplom/blob/master/docs/Plan.md)***
+- ***[Отчет о тестировании](https://github.com/Valeriya908/Aqa_Diplom/blob/master/docs/Report.md)***
+- ***[Отчёт о проведённой автоматизации](https://github.com/Valeriya908/Aqa_Diplom/blob/master/docs/Summary.md)***
 ___
 ## _Краткое описание тестируемого приложения:_
 ### _Бизнес часть:_
