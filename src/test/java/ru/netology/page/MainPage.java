@@ -9,13 +9,13 @@ public class MainPage {
     private SelenideElement buttonBuyOnCredit = $$("[class='button__content']").last();
 
 
-    public PaymentPage buyWithCard() {
+    public DebitCardPage buyWithCard() {
         buttonBuy.click();
-        return new PaymentPage();
+        return new DebitCardPage();
     }
 
-    public PaymentPage buyWithCardOnCredit() {
+    public CreditCardPage buyWithCardOnCredit() {
         buttonBuyOnCredit.click();
-        return new PaymentPage();
+        return new CreditCardPage();
     }
 }
